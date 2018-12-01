@@ -24,6 +24,7 @@ nlu_md = """
 - my printer is broken
 - something wrong with my printer
 - there seems to be an issue with my printer
+- i'm having printer troubles
 
 ## intent:mood_deny
 - no
