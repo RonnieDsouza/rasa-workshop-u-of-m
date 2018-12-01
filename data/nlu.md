@@ -13,11 +13,10 @@ nlu_md = """
 - see you around
 - see you later
 
-## intent:mood_affirm
+## intent:affirm
 - yes
 - indeed
 - of course
-- that sounds good
 - correct
 
 ## intent:external_display_problem
@@ -39,10 +38,6 @@ nlu_md = """
 - no way
 - not really
 
-## intent:confirm
-- yes
-- yeah
-- of course
 
 ## intent:mood_great
 - perfect
