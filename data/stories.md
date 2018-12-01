@@ -1,42 +1,40 @@
-domain_yml = """
-intents:
-  - greet
-  - goodbye
-  - mood_affirm
-  - mood_deny
-  - mood_great
-  - mood_unhappy
-  - printer_problem
-  - printer_problem_deny
+stories_md = """
+## happy path
+* greet
+  - utter_greet
+* mood_great
+  - utter_happy
 
-actions:
-- utter_greet
-- utter_cheer_up
-- utter_did_that_help
-- utter_happy
-- utter_is_it_plugged_in
-- utter_goodbye
+## sad path 1
+* greet
+  - utter_greet
+* mood_unhappy
+  - utter_cheer_up
+  - utter_did_that_help
+* mood_affirm
+  - utter_happy
 
-templates:
-  utter_greet:
-  - text: "Hey! How are you?"
+## sad path 2
+* greet
+  - utter_greet
+* mood_unhappy
+  - utter_cheer_up
+  - utter_did_that_help
+* mood_deny
+  - utter_goodbye
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
+## printer problem path
+* greet
+ - utter_greet
+* printer_problem
+  - utter_is_it_plugged_in
+* printer_problem_deny
+  - utter_goodbye
   
-  utter_is_it_plugged_in:
-   - text: "Is it plugged in boy?"
-  
-  utter_happy:
-  - text: "Great carry on!"
-
-  utter_goodbye:
-  - text: "Bye"
+## say goodbye
+* goodbye
+  - utter_goodbye
 """
-%store domain_yml > domain.yml
+%store stories_md > stories.md
 
 print("Done!")
