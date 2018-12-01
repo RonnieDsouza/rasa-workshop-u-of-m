@@ -21,6 +21,8 @@ nlu_md = """
 - correct
 
 ## intent:external_display_problem
+- my tv doesn't work
+- my monitor doesn't work
 - 
 
 ## intent:printer_problem
