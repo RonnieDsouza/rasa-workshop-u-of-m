@@ -26,13 +26,18 @@ nlu_md = """
 - there seems to be an issue with my printer
 - i'm having printer troubles
 
-## intent:mood_deny
+## intent:deny
 - no
 - never
 - I don't think so
 - don't like that
 - no way
 - not really
+
+## intent:confirm
+- yes
+- yeah
+- of course
 
 ## intent:mood_great
 - perfect
@@ -44,17 +49,7 @@ nlu_md = """
 - I am great
 - I'm good
 
-## intent:mood_unhappy
-- sad
-- very sad
-- unhappy
-- bad
-- very bad
-- awful
-- terrible
-- not very good
-- extremely sad
-- so sad
+
 """
 %store nlu_md > nlu.md
 
