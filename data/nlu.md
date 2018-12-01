@@ -20,10 +20,13 @@ nlu_md = """
 - that sounds good
 - correct
 
+## intent:external_display_problem
+- 
+
 ## intent:printer_problem
--my printer is broken
--something wrong with my printer
--there seems to be an issue with my printer
+- my printer is broken
+- something wrong with my printer
+- there seems to be an issue with my printer
 
 ## intent:mood_deny
 - no
