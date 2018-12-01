@@ -2,20 +2,17 @@ domain_yml = """
 intents:
   - greet
   - goodbye
-  - mood_affirm
-  - mood_deny
-  - mood_great
-  - mood_unhappy
   - printer_problem
-  - printer_problem_deny
+  - deny
+  - confirm
 
 actions:
 - utter_greet
-- utter_cheer_up
 - utter_did_that_help
-- utter_happy
 - utter_is_it_plugged_in
 - utter_goodbye
+- utter_disappointed
+- utter_lies
 
 templates:
   utter_greet:
